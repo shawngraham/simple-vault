@@ -43,7 +43,7 @@ You can have as many notes open as you want; you can pin certain notes to always
 
 ## From notes to drafts
 
-- Build up 'over view notes' on a topic or idea by creating a new note; use the search function, the graph visualiation, or other kinds of plugins (look up 'journey' for instance in the community plugins section) to find threads of related ideas. Add these links to your over view note. Then, if you wish, you can place a `!` in front of the links, which will _embed_ the contents of the note, the block, or the media into your note. Such notes can be copied or exported to other writing systems (the pandoc plugin for Obsidian will turn the note into html or Word .doc format, for instance) 
+- Build up 'over view notes' on a topic or idea by creating a new note; use the search function, the graph visualiation, or other kinds of plugins (look up 'journey' for instance in the community plugins section) to find threads of related ideas. Add these links to your over view note. Then, if you wish, you can place a `!` in front of the links, which will _embed_ the contents of the note, the block, or the media into your note (for embedding blocks of text from a note, see the next section on using the `^` to anchor the text). Such notes can be copied or exported to other writing systems (the pandoc plugin for Obsidian will turn the note into html or Word .doc format, for instance) 
 
 
 # Slightly More Complex Use
@@ -51,14 +51,21 @@ You can have as many notes open as you want; you can pin certain notes to always
 	- inserting templates into new notes, for consistency (make a new note, click the cursor in there, then insert template) "templates: insert template"
 	- grabbing hypothesis annotations (via the Templater) command (make a new note, click the cursor in there, then insert template)  "templater: insert templates". Note, **templater**. Also available from command bar under the relevant icon 
 	- selecting a block of text to turn into a new note, connected to the original note "note composer: extract text"
+
 - Use the backlinks and outgoing links panel, and the graph panel, to see how your notes interconnect, and to find _potential_ connections
+
 - When you search for notes, you can copy the search results into a _new_ note; the results will all be links.
-- You can create notes (new files) in Obsidian that _embed_ notes, paragraphs, or headings from _other_ notes. In this way, you can build up drafts, outlines, and more complex pieces of writing that you can then export to Word and so on. This features is called _transclusion_ and you do this by putting an exclamation point in front of the `[[` to link to your note.
-	- if you install the pandoc plugin for obsidian (after first installing [pandoc](https://pandoc.org/installing.html) on your computer) you can export notes into a .docx file formatted for Word etc by selecting pandoc from the command pallette. 
+
+- If you install the pandoc plugin for obsidian (after first installing [pandoc](https://pandoc.org/installing.html) on your computer) you can export notes into a .docx file formatted for Word etc by selecting pandoc from the command pallette. 
 	- If you don't, that's ok too: just hit the preview button and then copy and paste into word.
 
+## Embedding (transcluding) text
+
+You can create notes (new files) in Obsidian that _embed_ notes, paragraphs, or headings from _other_ notes. In this way, you can build up drafts, outlines, and more complex pieces of writing that you can then export to Word and so on. This features is called _transclusion_ and you do this by putting an exclamation point in front of the `[[` to link to your note; then, with the link created, insert a `^` at the end of the note name (but before the closing `]]` and obsidian will show you the various blocks of text _within_ that note. Click on the one you want, and Obsidian will create the link. With preview on, you'll now see the embedded text.
+
+
 ##  Create notes from your hypothesis annotations
-- Create a new note, then insert the hypothesis template.
+- Create a new note, then insert the hypothesis template. ('insert template**r**' in the command pallette)
 - When you run the hypothesis templater command in a new note for the first time, Obsidian will first prompt you for your Hypothesis user token. You find that at your Hypothesis user page. Once you give that to Obsidian (which it will keep in a file here in your vault for you, so you only ever have to do it the first time), you will be prompted  for the url or date for the resource you annotated; it will then grab those annotations as separate notes. 
 - remember that hypothesis is pretty handy for annotating pdfs too, if you open the pdf in your browser
 
