@@ -67,7 +67,7 @@ You can create notes (new files) in Obsidian that _embed_ notes, paragraphs, or 
 ##  Create notes from your hypothesis annotations
 - Create a new note, then insert the hypothesis template. ('insert template**r**' in the command pallette)
 - When you run the hypothesis templater command in a new note for the first time, Obsidian will first prompt you for your Hypothesis user token. You find that at your Hypothesis user page. Once you give that to Obsidian (which it will keep in a file here in your vault for you, so you only ever have to do it the first time), you will be prompted  for the url or date for the resource you annotated; it will then grab those annotations as separate notes. 
-- remember that hypothesis is pretty handy for annotating pdfs too, if you open the pdf in your browser
+- there are community plugins to allow you to extract annotations made on local pdfs; the best of these at the moment seems to be 'PDF Highlights', which you can find under settings, browse community plugins. 
 
 ##  Refactoring your notes
 
