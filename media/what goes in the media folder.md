@@ -1,0 +1,1 @@
+Drop pdfs, jpgs, pngs, etc: any media file you wish to reference in your notes. You can embed such things in your notes by making a link to them; don't worry about the folder name in your links, since Obsidian is smart enough to figure that out.
