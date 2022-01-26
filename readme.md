@@ -6,3 +6,4 @@ Start it up, and explore the included 'help' vault to become familiar with the i
 
 When you open this vault for the first time, Obsidian will ask you if you want to turn safe mode off; say 'yes'. (There are one or two community plugins used; 'safe' mode disables community plugins. But these ones are ok.)
 
+A more complex vault with a lot of bells and whistles is available [here](https://github.com/shawngraham/obsidian-student-starter-vault)
