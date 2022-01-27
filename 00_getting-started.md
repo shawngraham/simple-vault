@@ -31,6 +31,8 @@ If you click on the 'open vault' button, you can load/open the default vault tha
 ## Explore how things connect
 - periodically, explore and re-read your notes with an eye to creating links between them.  Type `[[` and `]]` to find connections between your notes, and to interlink them (you can also highlight a word, and then type the square brackets). As you type, Obsidian searches through your notes to find notes by title or content. (NB: one square bracket `[like this]` is the first part of making an _external_ link in your note, `[like this](https://example.com)`).
 
+-**YOU CAN MAKE LINKS TO THINGS THAT DON'T EXIST** This is a key idea. As you make a note, you can wrap a word, a phrase, with `[[` and `]]` _and obsidian will create a new note with that word/phrase as the title_. You can let your ideas generate their own connections. You can go back through old notes, and make links to things that should exist. And when you start to make links, Obsidian will also suggest (simple word matching) other notes with similar titles. On the right hand side of the interface, you can also open up a panel of backlinks and forelinks to the active note; for more on how this feature enables you to link your thoughts, maybe [start with this thread on the forums](https://forum.obsidian.md/t/understanding-obsidian-features-backlinks/65/2)
+
 ## Organize if you want but you don't have to
 - You **can** create folders to file your materials, but you don't have to. You **might** create a folder called 'inbox' for when you've started a note or idea that you want to come back to mull over, and whatever other folders you want to store the various notes you've created.
 
