@@ -1,8 +1,7 @@
 ---
-tutorial:
-project:
 date: {{date}}
-tags: tag1, tag2, etc
+type: process
+project: 
 ---
 
 # what I was trying to do

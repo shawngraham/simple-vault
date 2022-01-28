@@ -19,19 +19,18 @@ If you click on the 'open vault' button, you can load/open the default vault tha
 
 # Basic use
 
-## Record your process
+## Record your process when doing technical work
 - make a daily note (there's a button in the toolbar) every day to record what you're doing/thinking. Dump into that note thoughts, problems, issues, inspirations. You can always parse it out into better notes later, and it's good to keep track of things
 
 - when you're working on a a technical tutorial or some kind of digital project, create a new note with ctrl +n, then from the command palette (ctrl + p) select 'Templates: insert from template' and select the process note template to help keep track of your thoughts. **confusingly, there is also a command 'Templater: insert from template'** The command with the 's' inserts the simple template; the one with the 'r' inserts complex templates (the difference between simple and complex is that the latter contain actual code)
 
-## Notes on your thinking
-- record the summary of the literature you are reading by making a new note, then selecting the literature note template
-- make notes as you read or think about the content of the course. One strategy is to make a new note for a unique thought/idea - make a new note, and insert the atomic note template
+## Make notes on your reading
+- record the summary of the literature you are reading by making a new note, then selecting the [[ref-note-template]] 
+- make notes as you read or think about a piece. Make a new note for a unique thought/idea, but don't mindlessly copy passages. **Re-write** in you own words in a new note having inserted the [[literature-note-template]] to guide you.
 
 ## Explore how things connect
 - periodically, explore and re-read your notes with an eye to creating links between them.  Type `[[` and `]]` to find connections between your notes, and to interlink them (you can also highlight a word, and then type the square brackets). As you type, Obsidian searches through your notes to find notes by title or content. (NB: one square bracket `[like this]` is the first part of making an _external_ link in your note, `[like this](https://example.com)`).
-
--**YOU CAN MAKE LINKS TO THINGS THAT DON'T EXIST** This is a key idea. As you make a note, you can wrap a word, a phrase, with `[[` and `]]` _and obsidian will create a new note with that word/phrase as the title_. You can let your ideas generate their own connections. You can go back through old notes, and make links to things that should exist. And when you start to make links, Obsidian will also suggest (simple word matching) other notes with similar titles. On the right hand side of the interface, you can also open up a panel of backlinks and forelinks to the active note; for more on how this feature enables you to link your thoughts, maybe [start with this thread on the forums](https://forum.obsidian.md/t/understanding-obsidian-features-backlinks/65/2)
+- reflect on what you're seeing, and thinking about, using the [[permanent-note-template]] to capture those thoughts, using the permanent note template
 
 ## Organize if you want but you don't have to
 - You **can** create folders to file your materials, but you don't have to. You **might** create a folder called 'inbox' for when you've started a note or idea that you want to come back to mull over, and whatever other folders you want to store the various notes you've created.
@@ -45,7 +44,7 @@ You can have as many notes open as you want; you can pin certain notes to always
 
 ## From notes to drafts
 
-- Build up 'over view notes' on a topic or idea by creating a new note; use the search function, the graph visualiation, or other kinds of plugins (look up 'journey' for instance in the community plugins section) to find threads of related ideas. Add these links to your over view note. Then, if you wish, you can place a `!` in front of the links, which will _embed_ the contents of the note, the block, or the media into your note (for embedding blocks of text from a note, see the next section on using the `^` to anchor the text). Such notes can be copied or exported to other writing systems (the pandoc plugin for Obsidian will turn the note into html or Word .doc format, for instance) 
+- Build up 'over view notes' on a topic or idea by creating a new note; use the search function, the graph visualiation, or other kinds of plugins (look up 'journey' for instance in the community plugins section) to find threads of related ideas. Add these links to your over view note. Then, if you wish, you can place a `!` in front of the links, which will _embed_ the contents of the note, the block, or the media into your note. Such notes can be copied or exported to other writing systems (the pandoc plugin for Obsidian will turn the note into html or Word .doc format, for instance) 
 
 
 # Slightly More Complex Use
@@ -53,23 +52,16 @@ You can have as many notes open as you want; you can pin certain notes to always
 	- inserting templates into new notes, for consistency (make a new note, click the cursor in there, then insert template) "templates: insert template"
 	- grabbing hypothesis annotations (via the Templater) command (make a new note, click the cursor in there, then insert template)  "templater: insert templates". Note, **templater**. Also available from command bar under the relevant icon 
 	- selecting a block of text to turn into a new note, connected to the original note "note composer: extract text"
-
 - Use the backlinks and outgoing links panel, and the graph panel, to see how your notes interconnect, and to find _potential_ connections
-
 - When you search for notes, you can copy the search results into a _new_ note; the results will all be links.
-
-- If you install the pandoc plugin for obsidian (after first installing [pandoc](https://pandoc.org/installing.html) on your computer) you can export notes into a .docx file formatted for Word etc by selecting pandoc from the command pallette. 
+- You can create notes (new files) in Obsidian that _embed_ notes, paragraphs, or headings from _other_ notes. In this way, you can build up drafts, outlines, and more complex pieces of writing that you can then export to Word and so on. This features is called _transclusion_ and you do this by putting an exclamation point in front of the `[[` to link to your note.
+	- if you install the pandoc plugin for obsidian (after first installing [pandoc](https://pandoc.org/installing.html) on your computer) you can export notes into a .docx file formatted for Word etc by selecting pandoc from the command pallette. 
 	- If you don't, that's ok too: just hit the preview button and then copy and paste into word.
 
-## Embedding (transcluding) text
-
-You can create notes (new files) in Obsidian that _embed_ notes, paragraphs, or headings from _other_ notes. In this way, you can build up drafts, outlines, and more complex pieces of writing that you can then export to Word and so on. This features is called _transclusion_ and you do this by putting an exclamation point in front of the `[[` to link to your note; then, with the link created, insert a `^` at the end of the note name (but before the closing `]]` and obsidian will show you the various blocks of text _within_ that note. Click on the one you want, and Obsidian will create the link. With preview on, you'll now see the embedded text.
-
-
 ##  Create notes from your hypothesis annotations
-- Create a new note, then insert the hypothesis template. ('insert template**r**' in the command pallette)
+- Create a new note, then insert the hypothesis template.
 - When you run the hypothesis templater command in a new note for the first time, Obsidian will first prompt you for your Hypothesis user token. You find that at your Hypothesis user page. Once you give that to Obsidian (which it will keep in a file here in your vault for you, so you only ever have to do it the first time), you will be prompted  for the url or date for the resource you annotated; it will then grab those annotations as separate notes. 
-- there are community plugins to allow you to extract annotations made on local pdfs; the best of these at the moment seems to be 'PDF Highlights', which you can find under settings, browse community plugins. 
+- remember that hypothesis is pretty handy for annotating pdfs too, if you open the pdf in your browser
 
 ##  Refactoring your notes
 
@@ -126,3 +118,4 @@ Don't get too hung up on plugins. There are *many* plugins, and playing with the
 # Acknowledgement
 
 The structure of this vault and some of its note templates is patterned after the approach Andrew Roddick uses with his anthropology students at McMaster University.
+
