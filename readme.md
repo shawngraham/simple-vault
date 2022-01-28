@@ -19,7 +19,7 @@ year: {{year}}
 
 ### Article title: 
 
-{{authorString}}, {{year}}.{{title}}, {{containerTitle}}
+{{authorString}}. {{year}}. {{title}}, {{containerTitle}}. {{publisher}}, {{publisherPlace}}.
 
 ### Summary & Key Take Aways
 
@@ -33,5 +33,6 @@ year: {{year}}
 
 ### Links
 
-{{zoteroSelectURI}}
+[Open In Zotero]({{zoteroSelectURI}})
+
 ```
