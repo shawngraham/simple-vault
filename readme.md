@@ -6,3 +6,4 @@ Start it up, and explore the included 'help' vault to become familiar with the i
 
 When you open this vault for the first time, Obsidian will ask you if you want to turn safe mode off; say 'yes'. (There are one or two community plugins used; 'safe' mode disables community plugins. But these ones are ok.)
 
+By the way, academics - I don't have the zotero citations plugin installed here, but if that's something you want, [this is a very nice walk through of using it that will work with this vault too](https://www.marianamontes.me/post/obsidian-and-zotero/).
